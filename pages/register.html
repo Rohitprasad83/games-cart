@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Games Cart</title>
     <meta name="author" content="Rohit Prasad" />
-    <meta name="description" content="homepage" />
+    <meta name="description" content="Register" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://particle-ui.netlify.app/main.css" />
-    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="../style/authentication.css" />
+    <link rel="stylesheet" href="../style/home.css" />
   </head>
 
   <body>
@@ -20,7 +21,9 @@
             <input type="text" class="search" placeholder="🔍 Search" />
           </li>
           <li class="navbar__list__items">
-            <button class="btn btn__secondary">Login</button>
+            <button class="btn btn__secondary">
+              <a href="./login.html">Login</a>
+            </button>
           </li>
 
           <li class="navbar__list__items">
@@ -41,38 +44,48 @@
       <div class="main__container">
         <div class="form__group">
           <h4>Sign up</h4>
-          <label for="first__name">First Name</label>
-          <input
-            type="text"
-            id="first__name"
-            name="first__name"
-            placeholder="First Name"
-            class="form__group__input"
-          />
-          <label for="last__name">Last Name</label>
-          <input
-            type="text"
-            id="last__name"
-            name="last__name"
-            placeholder="Last Name"
-            class="form__group__input"
-          />
-          <label for="username">Email</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Enter your email"
-            class="form__group__input"
-          />
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Enter your password"
-            class="form__group__input"
-          />
+          <div class="form__name">
+            <label for="first__name">
+              First Name
+              <input
+                type="text"
+                id="first__name"
+                name="first__name"
+                placeholder="First Name"
+                class="form__group__input"
+              />
+            </label>
+            <label for="last__name">
+              Last Name
+              <input
+                type="text"
+                id="last__name"
+                name="last__name"
+                placeholder="Last Name"
+                class="form__group__input"
+              />
+            </label>
+          </div>
+          <label for="username">
+            Email
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your email"
+              class="form__group__input"
+            />
+          </label>
+          <label for="password">
+            Password
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              class="form__group__input"
+            />
+          </label>
           <div class="form__bottom">
             <label class="text__md">
               <input type="checkbox" />
