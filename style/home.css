@@ -1,97 +1,107 @@
-
-
 .home__container {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-areas: "header" 
-                         "main";
-    grid-template-rows: 8rem auto;
-    grid-template-columns: 1fr;
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-areas:
+    'header'
+    'main';
+  grid-template-rows: 8rem auto;
+  grid-template-columns: 1fr;
 }
 
 .navbar {
-    grid-area: header;
-    z-index: 1;
-    background-color: var(--white);
+  grid-area: header;
+  z-index: 1;
+  background-color: var(--white);
 }
 
 .main__container {
-    grid-area: main;
-    margin: 4rem 1rem;
+  grid-area: main;
+  margin: 4rem 1rem;
 }
 .categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .card {
-    cursor: pointer;
+  cursor: pointer;
 }
 .categories > .card {
-    width: 20rem;
+  width: 20rem;
 }
 .center__image {
-    max-width: 80rem;
-    margin: 3rem auto;
+  max-width: 80rem;
+  margin: 3rem auto;
 }
 
 .bottom__categories {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .icon {
-    font-size: 2.5rem;
-    
+  font-size: 2.5rem;
 }
 
 .btn {
-    width: 8rem;
+  width: 8rem;
 }
 
 .navbar__header {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .navbar__list {
-    margin: 0 1rem 0 auto;
+  margin: 0 1rem 0 auto;
 }
 
 .badge__icons {
-    height: 5rem;
+  height: 5rem;
 }
 
 .search {
-    height: 3rem;
-    border-radius: 2px;
-    border: 1px solid var(--gray);
+  height: 3rem;
+  border-radius: 2px;
+  border: 1px solid var(--gray);
 }
 
 @media only screen and (max-width: 768px) {
-        .navbar__header {
-            font-size: 1.6rem;
-        }
-        .btn {
-            font-size: 1.2rem;
-            width: 6rem;
-        }
-        .icon {
-        font-size: 2.2rem;
-        }
-        .navbar__list {
-            gap: 0;
-        }
-        .search {
-            width: 10rem;
-        }
-        .badge__number {
-            font-size: 1rem;
-        }
-        .card__horizontal {
-            width: 38rem;
-            border: none;
-        }
+  .navbar__header {
+    font-size: 1.6rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+    width: 6rem;
+  }
+  .icon {
+    font-size: 2.2rem;
+  }
+  .navbar__list {
+    gap: 0;
+  }
+  .search {
+    width: 10rem;
+  }
+
+  .badge__number {
+    font-size: 1rem;
+  }
+  .card__horizontal {
+    width: 38rem;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar__list__items > .btn {
+    width: 5rem;
+    font-size: 1rem;
+  }
+  .search {
+    width: 6rem;
+    font-size: 1rem;
+  }
 }
