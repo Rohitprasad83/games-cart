@@ -70,7 +70,7 @@
     border: 1px solid var(--gray);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 76em) {
     .navbar__header {
         font-size: 1.6rem;
     }
