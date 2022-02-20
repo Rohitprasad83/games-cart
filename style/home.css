@@ -75,7 +75,7 @@
     .navbar__header {
         font-size: 1.6rem;
     }
-    .btn {
+    .navbar>.btn {
         font-size: 1.2rem;
         width: 6rem;
     }
