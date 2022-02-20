@@ -1,0 +1,65 @@
+.main__container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+.btn {
+    font-size: 1.8rem;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.filter {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    border: 1px solid var(--gray);
+}
+
+.filter__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter__category {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filter__rating {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filter__sorting {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    width: 23rem;
+}
+
+.card__image {
+    width: 100%;
+}
+
+.card__image>img {
+    width: 100%;
+}
+
+.filter__clear {
+    cursor: pointer;
+    text-decoration: underline;
+}
