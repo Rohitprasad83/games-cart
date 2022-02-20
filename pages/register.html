@@ -25,27 +25,25 @@
                 </li>
                 <li class="navbar__list__items">
                     <a href="./login.html">
-                        <button class="btn btn__secondary">
-                            Login
-                        </button>
+                        <button class="btn btn__secondary">Login</button>
                     </a>
                 </li>
 
                 <li class="navbar__list__items">
                     <a href="./wishlist.html">
                         <span class="badge__icons">
-                            <i class="fa-regular fa-heart icon"></i>
-                            <span class="badge__number badge__primary">5</span>
+                <i class="fa-regular fa-heart icon"></i>
+                <span class="badge__number badge__primary">5</span>
                         </span>
                     </a>
                 </li>
                 <li class="navbar__list__items">
                     <a href="./cart.html">
                         <span class="badge__icons">
-                            <i class="fa-solid fa-cart-shopping icon"></i>
-                            <span class="badge__number badge__primary">5</span>
+                <i class="fa-solid fa-cart-shopping icon"></i>
+                <span class="badge__number badge__primary">5</span>
+                        </span>
                     </a>
-                    </span>
                 </li>
             </ul>
         </nav>
@@ -60,7 +58,6 @@
                 type="text"
                 id="first__name"
                 name="first__name"
-                placeholder="First Name"
                 class="form__group__input"
               />
             </label>
@@ -70,7 +67,6 @@
                 type="text"
                 id="last__name"
                 name="last__name"
-                placeholder="Last Name"
                 class="form__group__input"
               />
             </label>
@@ -81,35 +77,46 @@
               type="text"
               id="username"
               name="username"
-              placeholder="Enter your email"
               class="form__group__input"
             />
           </label>
-                <label for="password">
+                <label for="pass">
             Password
             <input
               type="password"
-              id="password"
-              name="password"
-              placeholder="Enter your password"
+              id="pass"
+              name="pass"
               class="form__group__input"
             />
           </label>
-                <div class="form__bottom">
-                    <label class="text__md">
+
+                <label for="confirm__password">
+            Confirm Password
+            <input
+              type="password"
+              id="confirm__password"
+              name="confirm__password"
+              class="form__group__input"
+            />
+          </label>
+                <label>
+            <input type="checkbox" class="show__password text__md" /> Show
+            Password</label
+          >
+          <div class="form__bottom">
+            <label class="text__md">
               <input type="checkbox" />
               I accept all terms & conditions
             </label>
-                </div>
-                <button class="btn btn__primary login">
-            Create a new Account
-          </button>
-                <div class="register text__center">
-                    <a href="./login.html">Already have an account ></a>
-                </div>
+            </div>
+            <button class="btn btn__primary login">Create a new Account</button>
+            <div class="register text__center">
+                <a href="./login.html">Already have an account ></a>
             </div>
         </div>
     </div>
+    </div>
+    <script src="../javascript/register.js"></script>
 </body>
 
 </html>
