@@ -29,21 +29,10 @@
     justify-content: space-between;
 }
 
-.filter__category {
+.flex__column {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-}
-
-.filter__rating {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.filter__sorting {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -62,4 +51,9 @@
 .filter__clear {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.slider__price {
+    display: flex;
+    justify-content: space-between;
 }

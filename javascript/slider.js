@@ -1,5 +1,5 @@
-const sliderInput = document.querySelector(".slider__input");
+const slider = document.querySelector(".slider");
 const sliderOutput = document.querySelector(".slider__output");
-sliderInput.addEventListener("change", () => {
-    sliderOutput.innerText = `Your Selected Price is ${sliderInput.value}`;
+slider.addEventListener("change", () => {
+    sliderOutput.innerText = ` Price Range is ₹1000 to ₹${slider.value}`;
 })

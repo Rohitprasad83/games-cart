@@ -59,12 +59,17 @@
                     <span class="font__bold">Filters</span>
                     <button class="filter__clear">Clear</button>
                 </div>
-                <div class="slider text__md">
-                    <label for="slider__input">Select your Price Range</label>
-                    <input id="slider__input" type="range" min="1" max="100" value="50" class="slider__input" />
+                <div class="filter__slider flex__column text__md ">
+                    <label for="slider">Select your Price Range</label>
+                    <div class="slider__price text__md font__light">
+                        <span>1000</span>
+                        <span>5500</span>
+                        <span>10000</span>
+                    </div>
+                    <input id="slider" type="range" min="1000" max="10000" value="5500" class="slider" />
                     <div class="slider__output text__md"></div>
                 </div>
-                <div class="filter__category">
+                <div class="filter__category flex__column">
                     <h5>Category</h5>
 
                     <label><input type="checkbox">
@@ -83,7 +88,7 @@
                         Sports
                     </label>
                 </div>
-                <div class="filter__rating">
+                <div class="filter__rating flex__column">
                     <h5>Rating</h5>
 
                     <label>
@@ -103,7 +108,7 @@
                         1 Stars and above
                     </label>
                 </div>
-                <div class="filter__sorting">
+                <div class="filter__sorting flex__column">
                     <h5>Sort By</h5>
                     <label>
                         <input type="radio" name="sorting">
