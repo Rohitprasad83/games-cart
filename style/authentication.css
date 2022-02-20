@@ -15,6 +15,7 @@
 
 .main__container {
     grid-area: main;
+    border-radius: 1rem;
 }
 
 .form__group {
