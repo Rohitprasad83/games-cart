@@ -62,7 +62,11 @@ input {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 640px) {
+.logged__out {
+    margin: 3rem auto;
+}
+
+@media only screen and (max-width: 64em) {
      :root {
         font-size: 55%;
     }
