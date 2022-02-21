@@ -66,14 +66,16 @@
 }
 
 .search {
+    max-width: 25rem;
     height: 3rem;
-    border-radius: 2px;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
     border: 1px solid var(--gray);
 }
 
 @media only screen and (max-width: 76em) {
     .navbar__header {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     .navbar>.btn {
         font-size: 1.2rem;
@@ -85,9 +87,9 @@
     .navbar__list {
         gap: 0;
     }
-    .search {
-        width: 10rem;
-    }
+    /* .search {
+        width: 15rem;
+    } */
     .badge__number {
         font-size: 1rem;
     }
@@ -103,7 +105,6 @@
         font-size: 1rem;
     }
     .search {
-        width: 6rem;
         font-size: 1rem;
     }
 }
