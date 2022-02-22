@@ -9,6 +9,7 @@
 
 .navbar {
     grid-area: header;
+    height: 8rem;
     z-index: 1;
     background-color: var(--white);
 }
@@ -74,12 +75,16 @@
 }
 
 @media only screen and (max-width: 76em) {
-    .navbar__header {
-        font-size: 2rem;
+     :root {
+        font-size: 55%;
     }
-    .navbar>.btn {
+    .navbar__header {
+        font-size: 1.6rem;
+    }
+    .btn {
         font-size: 1.2rem;
-        width: 6rem;
+        width: 5rem;
+        padding: 1rem 0.5rem;
     }
     .icon {
         font-size: 2.2rem;
@@ -87,9 +92,6 @@
     .navbar__list {
         gap: 0;
     }
-    /* .search {
-        width: 15rem;
-    } */
     .badge__number {
         font-size: 1rem;
     }
@@ -97,14 +99,8 @@
         width: 38rem;
         border: none;
     }
-}
-
-@media only screen and (max-width: 50em) {
-    .navbar__list__items>.btn {
-        width: 5rem;
-        font-size: 1rem;
-    }
     .search {
-        font-size: 1rem;
+        max-width: 9rem;
+        padding: 0;
     }
 }
